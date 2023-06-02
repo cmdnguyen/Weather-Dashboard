@@ -8,45 +8,86 @@
     <link rel = "stylesheet" src = "Assets/css/style.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-dark bg-primary">
-  <div class="container-fluid d-flex justify-content-center">
-    <span class="navbar-brand mb-0 h1 ">Weather Dashboard</span>
-  </div>
-</nav>
-<section class="container bd-sidebar">
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid d-flex justify-content-center">
+      <span class="navbar-brand mb-0 h1 ">Weather Dashboard</span>
+    </div>
+  </nav>
+
+  <section class="container-fluid">
     <div class="input-group row">
-        <div class="col-12 col-md-6 col-lg-4">
-        <input type="search" class="form-control rounded m-2" placeholder="Search for City" aria-label="Search" aria-describedby="search-addon" />
-        <button type="button" class="btn btn-outline-primary m-2">search</button>
-      <div class="btn-group-vertical d-flex justify-content-center" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-info text-white m-1">City</button>
-        <button type="button" class="btn btn-info text-white m-1">City</button>
-        <button type="button" class="btn btn-info text-white m-1">City</button>
-        <button type="button" class="btn btn-info text-white m-1">City</button>
-        <button type="button" class="btn btn-info text-white m-1">City</button>
-        <button type="button" class="btn btn-info text-white m-1">City</button>
-        <button type="button" class="btn btn-info text-white m-1">City</button>
-        <div class=" card-body col-12 col-md-6 col-lg-8">
-            This is some text within a card body.
+        <div class="col-12 col-md-3 col-lg-2">
+          <div class = "mx-3">
+            <h2 class="my-3">Search for City:</h2>
+            <input type="search" class="form-control rounded my-2" placeholder="Search for City" aria-label="Search" aria-describedby="search-addon" />
+            <div class="d-flex justify-content-end">
+              <button id = "searchCityButton" type="button" class="btn btn-outline-primary my-2">search</button>
+            </div>
+            <div class="btn-group-vertical d-flex" role="group" aria-label="Basic example">
+              <button id = "cityNameButton" type="button" class="btn btn-info text-white my-1">City</button>
+              <button id = "cityNameButton" type="button" class="btn btn-info text-white my-1">City</button>
+              <button id = "cityNameButton" type="button" class="btn btn-info text-white my-1">City</button>
+              <button id = "cityNameButton" type="button" class="btn btn-info text-white my-1">City</button>
+              <button id = "cityNameButton" type="button" class="btn btn-info text-white my-1">City</button>
+              <button id = "cityNameButton" type="button" class="btn btn-info text-white my-1">City</button>
+              <button id = "cityNameButton" type="button" class="btn btn-info text-white my-1">City</button>
+            </div>
           </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-8">
-        This is some text within a card body.
-      </div>
         </div>
+
+        <div class="col-12 col-md-9 col-lg-10">
+          <div class="jumbotron m-3 border p-3">
+              <h1 class="display-4">City Name</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <hr class="my-4">
+              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            </div>
+
+            <h2 class="mt-4 mx-4">5-Day Forecast:</h2>
+
+            <div class = "d-flex flex-row">
+              <div id = "fiveDayCard" class="card bg-light m-3" style="max-width: 18rem;">
+                <div id = "fiveDayDate" class="card-header">Day</div>
+                <div class="card-body">
+                  <h5 class="card-title">Light card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <div id = "fiveDayCard" class="card bg-light m-3" style="max-width: 18rem;">
+                <div id = "fiveDayDate" class="card-header">Day</div>
+                <div class="card-body">
+                  <h5 class="card-title">Light card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div> 
+                <div id = "fiveDayCard" class="card bg-light m-3" style="max-width: 18rem;">
+                  <div id = "fiveDayDate" class="card-header">Day</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Light card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>  
+                  <div id = "fiveDayCard" class="card bg-light m-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Light card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div id = "fiveDayCard" class="card bg-light m-3" style="max-width: 18rem;">
+                    <div id = "fiveDayDate" class="card-header">Day</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Light card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+              </div>
+    </div> 
+    
     </section>
 
-  <section class="card container">
-    <div class="card-body row">
-    <div class="col-12">
-      This is some text within a card body.
-    </div>
-    </div>
-  </section>
-  <section>
-
-  </section>
 
     <script src = "Assets/js/script.js"></script>
 </body>
