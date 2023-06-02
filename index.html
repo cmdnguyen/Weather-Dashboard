@@ -20,11 +20,12 @@
     <div class="input-group row">
         <div class="col-12 col-md-3 col-lg-2">
           <div class = "mx-3">
-            <h2 class="my-3">Search for City:</h2>
+            <h3 class="my-3">Search for City:</h3>
             <input type="search" class="form-control rounded my-2" placeholder="Search for City" aria-label="Search" aria-describedby="search-addon" />
-            <div class="d-flex justify-content-end">
+            <div class="d-flex">
               <button id = "searchCityButton" type="button" class="btn btn-outline-primary my-2">search</button>
             </div>
+            <hr/>
             <div class="btn-group-vertical d-flex" role="group" aria-label="Basic example">
               <button id = "cityNameButton" type="button" class="btn btn-info text-white my-1">City</button>
               <button id = "cityNameButton" type="button" class="btn btn-info text-white my-1">City</button>
@@ -37,57 +38,60 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-9 col-lg-10">
-          <div class="jumbotron m-3 border p-3">
-              <h1 class="display-4">City Name</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-              <hr class="my-4">
-              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            </div>
+        <section class="col-12 col-md-9 col-lg-10">
+          <div id="displayCityWx" class="jumbotron m-3 border rounded p-3">
+              <h1 id="displayCityName">City Name</h1>
+              <p id="currentTemp" class="my-3">Temp:</p>
+              <p id="currentWind" class="my-3">Wind:</p>
+              <p id="currentHumidity" class="my-3">Humidity:</p>
+          </div>
 
-            <h2 class="mt-4 mx-4">5-Day Forecast:</h2>
+            <h3 class="mt-4 mx-4">5-Day Forecast:</h3>
 
-            <div class = "d-flex flex-row">
-              <div id = "fiveDayCard" class="card bg-light m-3" style="max-width: 18rem;">
-                <div id = "fiveDayDate" class="card-header">Day</div>
+            <section class = "d-flex flex-row justify-content-between">
+              <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
+                <div id = "fiveDayWxDay" class="card-header">Day</div>
                 <div class="card-body">
-                  <h5 class="card-title">Light card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p id="fiveDayTemp" class="card-text my-3">Temp:</p>
+                  <p id="fiveDayWind"class="card-text my-3">Wind:</p>
+                  <p id="fiveDayHumidity"class="card-text my-3">Humidity:</p>
                 </div>
               </div>
-              <div id = "fiveDayCard" class="card bg-light m-3" style="max-width: 18rem;">
-                <div id = "fiveDayDate" class="card-header">Day</div>
+              <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
+                <div id = "fiveDayWxDay" class="card-header">Day</div>
                 <div class="card-body">
-                  <h5 class="card-title">Light card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p id="fiveDayTemp" class="card-text my-3">Temp:</p>
+                  <p id="fiveDayWind"class="card-text my-3">Wind:</p>
+                  <p id="fiveDayHumidity"class="card-text my-3">Humidity:</p>
                 </div>
               </div> 
-                <div id = "fiveDayCard" class="card bg-light m-3" style="max-width: 18rem;">
-                  <div id = "fiveDayDate" class="card-header">Day</div>
+                <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
+                  <div id = "fiveDayWxDay" class="card-header">Day</div>
                     <div class="card-body">
-                      <h5 class="card-title">Light card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p id="fiveDayTemp" class="card-text my-3">Temp:</p>
+                      <p id="fiveDayWind"class="card-text my-3">Wind:</p>
+                      <p id="fiveDayHumidity"class="card-text my-3">Humidity:</p>
                     </div>
                 </div>  
-                  <div id = "fiveDayCard" class="card bg-light m-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
+                  <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
+                    <div id = "fiveDayWxDay" class="card-header">Day</div>
                     <div class="card-body">
-                      <h5 class="card-title">Light card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p id="fiveDayTemp" class="card-text my-3">Temp:</p>
+                      <p id="fiveDayWind"class="card-text my-3">Wind:</p>
+                      <p id="fiveDayHumidity"class="card-text my-3">Humidity:</p>
                     </div>
                   </div>
-                  <div id = "fiveDayCard" class="card bg-light m-3" style="max-width: 18rem;">
-                    <div id = "fiveDayDate" class="card-header">Day</div>
+                  <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
+                    <div id = "fiveDayWxDay" class="card-header">Day</div>
                     <div class="card-body">
-                      <h5 class="card-title">Light card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p id="fiveDayTemp" class="card-text my-3">Temp:</p>
+                      <p id="fiveDayWind"class="card-text my-3">Wind:</p>
+                      <p id="fiveDayHumidity"class="card-text my-3">Humidity:</p>
                     </div>
                   </div>
-              </div>
+                </section>
+            </section>
     </div> 
-    
-    </section>
-
 
     <script src = "Assets/js/script.js"></script>
 </body>
