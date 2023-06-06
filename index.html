@@ -21,12 +21,12 @@
         <div class="col-12 col-md-3 col-lg-2">
           <div class = "mx-3">
             <h3 class="my-3">Search for City:</h3>
-            <input type="search" class="form-control rounded my-2" placeholder="Search for City" aria-label="Search" aria-describedby="search-addon" />
+            <input type="type" class="form-control rounded my-2" name="searchCity" id="searchCity" placeholder="Search for City" aria-label="Search" aria-describedby="search-addon" />
             <div class="d-flex">
               <button id = "searchCityButton" type="button" class="btn btn-outline-primary my-2">search</button>
             </div>
             <hr/>
-            <div class="btn-group-vertical d-flex" role="group" aria-label="Basic example">
+            <div id = "cityNameContainer" class="btn-group-vertical d-flex" role="group" aria-label="Basic example">
               <button id = "cityNameButton" type="button" class="btn btn-info text-white my-1">City</button>
               <button id = "cityNameButton" type="button" class="btn btn-info text-white my-1">City</button>
               <button id = "cityNameButton" type="button" class="btn btn-info text-white my-1">City</button>
@@ -39,17 +39,17 @@
         </div>
 
         <section class="col-12 col-md-9 col-lg-10">
-          <div id="displayCityWx" class="jumbotron m-3 border rounded p-3">
-              <h1 id="displayCityName">City Name</h1>
+          <div id="currentCityWx" class="jumbotron m-3 border rounded p-3">
+             <!---- <h1 id="currentCityName">City Name</h1>
               <p id="currentTemp" class="my-3">Temp:</p>
               <p id="currentWind" class="my-3">Wind:</p>
               <p id="currentHumidity" class="my-3">Humidity:</p>
-          </div>
+          </div> -->
 
             <h3 class="mt-4 mx-4">5-Day Forecast:</h3>
 
-            <section class = "d-flex flex-row justify-content-between">
-              <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
+            <section id = "fiveDayWxContainer" class = "d-flex flex-row justify-content-between">
+             <!---- <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
                 <div id = "fiveDayWxDay" class="card-header">Day</div>
                 <div class="card-body">
                   <p id="fiveDayTemp" class="card-text my-3">Temp:</p>
@@ -65,33 +65,34 @@
                   <p id="fiveDayHumidity"class="card-text my-3">Humidity:</p>
                 </div>
               </div> 
-                <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
+              <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
                   <div id = "fiveDayWxDay" class="card-header">Day</div>
-                    <div class="card-body">
-                      <p id="fiveDayTemp" class="card-text my-3">Temp:</p>
-                      <p id="fiveDayWind"class="card-text my-3">Wind:</p>
-                      <p id="fiveDayHumidity"class="card-text my-3">Humidity:</p>
-                    </div>
-                </div>  
-                  <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
-                    <div id = "fiveDayWxDay" class="card-header">Day</div>
-                    <div class="card-body">
-                      <p id="fiveDayTemp" class="card-text my-3">Temp:</p>
-                      <p id="fiveDayWind"class="card-text my-3">Wind:</p>
-                      <p id="fiveDayHumidity"class="card-text my-3">Humidity:</p>
-                    </div>
+                  <div class="card-body">
+                    <p id="fiveDayTemp" class="card-text my-3">Temp:</p>
+                    <p id="fiveDayWind"class="card-text my-3">Wind:</p>
+                    <p id="fiveDayHumidity"class="card-text my-3">Humidity:</p>
                   </div>
-                  <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
-                    <div id = "fiveDayWxDay" class="card-header">Day</div>
-                    <div class="card-body">
-                      <p id="fiveDayTemp" class="card-text my-3">Temp:</p>
-                      <p id="fiveDayWind"class="card-text my-3">Wind:</p>
-                      <p id="fiveDayHumidity"class="card-text my-3">Humidity:</p>
-                    </div>
+              </div>  
+              <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
+                  <div id = "fiveDayWxDay" class="card-header">Day</div>
+                  <div class="card-body">
+                    <p id="fiveDayTemp" class="card-text my-3">Temp:</p>
+                    <p id="fiveDayWind"class="card-text my-3">Wind:</p>
+                    <p id="fiveDayHumidity"class="card-text my-3">Humidity:</p>
                   </div>
-                </section>
+              </div>
+              <div id = "fiveDayWxCard" class="card bg-light m-3" style="width: 18rem;">
+                  <div id = "fiveDayWxDay" class="card-header">Day</div>
+                  <div class="card-body">
+                    <p id="fiveDayTemp" class="card-text my-3">Temp:</p>
+                    <p id="fiveDayWind"class="card-text my-3">Wind:</p>
+                    <p id="fiveDayHumidity"class="card-text my-3">Humidity:</p> -->
+                  </div>
+              </div>
             </section>
-    </div> 
+        </section>
+    </div>
+  </section> 
 
     <script
     src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
