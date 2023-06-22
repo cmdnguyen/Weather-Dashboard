@@ -45,6 +45,7 @@ function localStorageSearch(event){
 }
 
 function makeForecastElements(data) {
+
   var currentCityWx = document.getElementById("currentCityWx");
   currentCityWx.innerHTML = ""
   var currentCityName = document.createElement("h1");
@@ -66,6 +67,7 @@ function makeForecastElements(data) {
   currentCityWx.append(currentHumidity);
   currentCityPlaceholder.setAttribute("style", "display: none");
 
+
   console.log(data.list[0].main.temp);
   console.log(data.list[0].wind.speed);
   console.log(data.list[0].main.humidity);
@@ -86,7 +88,8 @@ function makeForecastElements(data) {
     var fiveDayWind = document.createElement("p");
     var fiveDayHumidity = document.createElement("p");
 
-    fiveDayWxHeader.textContent = "Day " + i;
+
+    fiveDayWxHeader.textContent = "Day " + [i]
     fiveDayTemp.textContent = "Temp: " + data.list[i].main.temp + "°F";
     fiveDayWind.textContent = "Wind: " + data.list[i].wind.speed + " MPH";
     fiveDayHumidity.textContent =
