@@ -13,6 +13,13 @@ This was new experience using a Server Side API and fetching the data was an int
 
 Here's the link to the website: https://cmdnguyen.github.io/Weather-Dashboard/
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
 ## Installation
 
 N/A
