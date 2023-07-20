@@ -1,9 +1,11 @@
+//Declares variables from the html elements
 var cityNameBtn = document.getElementById("cityNameButton");
 var cityNameContainer = document.getElementById("cityNameContainer");
 var searchCityBtn = document.getElementById("searchCityButton");
 var wxCardPlaceholder = document.getElementById("wxCardPlaceholder");
 var currentCityPlaceholder = document.getElementById("currentCityPlaceholder");
 
+//Function to save search history when a new city has been searched
 function saveSearchHistory(newCity) {
   var myStorage = JSON.parse(localStorage.getItem("history"));
   if (!myStorage) {
@@ -21,7 +23,7 @@ function saveSearchHistory(newCity) {
   populateSearchHistory();
 }
 
-//This function gets called when local storage changes or my page loads
+//this function gets called when local storage changes or my page loads
 function populateSearchHistory() {
   var myStorage = JSON.parse(localStorage.getItem("history"));
   if (!myStorage) {
@@ -44,6 +46,7 @@ function localStorageSearch(event){
   fetchWeather(event.target.innerHTML)
 }
 
+//Function to create forecast elements in the current weather container and five-day container
 function makeForecastElements(data) {
 
   var currentCityWx = document.getElementById("currentCityWx");
@@ -117,6 +120,7 @@ function makeForecastElements(data) {
   }
 }
 
+//Function to fetch the weather data for the city that's being searched
 function fetchWeather(cityToSearchFor) {
   var APIKey = "7a606e84af306b85d675cea3b62d63d1";
   var weatherURL =
@@ -136,6 +140,7 @@ function fetchWeather(cityToSearchFor) {
     });
 }
 
+//Function to validate search, stops searching if user puts less than 3 characters
 function validateSearchInput() {
   var cityInputEl = document.querySelector("#searchCity");
   var city = cityInputEl.value.trim();
@@ -146,5 +151,6 @@ function validateSearchInput() {
   fetchWeather(city);
 }
 
+//Event listener to search for city
 searchCityBtn.addEventListener("click", validateSearchInput);
 populateSearchHistory();
